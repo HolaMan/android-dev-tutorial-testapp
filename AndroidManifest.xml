@@ -5,6 +5,7 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-sdk
         android:minSdkVersion="15"
         android:targetSdkVersion="15" />
@@ -40,6 +41,32 @@
         <activity
             android:name=".SplashActivity"
             android:label="@string/title_activity_splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".A_Workflow"
+            android:label="@string/title_activity_a__workflow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".B_Workflow"
+            android:label="@string/title_activity_b__workflow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".C_Workflow"
+            android:label="@string/title_activity_c__workflow" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

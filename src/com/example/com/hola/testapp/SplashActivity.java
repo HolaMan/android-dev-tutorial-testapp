@@ -18,7 +18,6 @@ public class SplashActivity extends Activity {
         // go to the select card activity after splash
         Handler handler = new Handler();        
         handler.postDelayed(new Runnable() { 
-            @Override
             public void run() { 
                 // make sure we close the splash screen so the user won't come back when it presses back key 
                 finish();

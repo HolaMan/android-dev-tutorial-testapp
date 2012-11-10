@@ -21,7 +21,6 @@ public class ToastActivity extends Activity {
         
         Button button4 = (Button)this.findViewById(R.id.button4);
         button4.setOnClickListener(new OnClickListener() {
-			@Override
 			public void onClick(View v) {
 				Toast.makeText( ToastActivity.this, "按鈕被按了....", Toast.LENGTH_LONG).show();
 			}});
@@ -51,14 +50,12 @@ public class ToastActivity extends Activity {
         builder.setTitle(title); //設定Dialog的標題
         builder.setMessage(message); //設定Dialog的內容        
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() { 
-            @Override
             public void onClick(DialogInterface dialog, int which) {
                 // do something you want when user click OK
             	Toast.makeText( ToastActivity.this, "你按了OK!!!", Toast.LENGTH_LONG).show();
             }
         });        
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
             public void onClick(DialogInterface dialog, int which) {
                 // do something you want when user click cancel
             	Toast.makeText( ToastActivity.this, "你按了Cancel!!!", Toast.LENGTH_LONG).show();

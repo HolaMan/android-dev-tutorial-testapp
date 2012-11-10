@@ -9,5 +9,8 @@
     <string name="title_activity_dialog">DialogActivity</string>
     <string name="title_activity_share_intent">ShareIntentActivity</string>
     <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_a__workflow">A_Workflow</string>
+    <string name="title_activity_b__workflow">B_Workflow</string>
+    <string name="title_activity_c__workflow">C_Workflow</string>
 
 </resources>

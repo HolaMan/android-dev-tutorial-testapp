@@ -7,6 +7,7 @@ import java.util.Map;
 
 import android.content.Intent;
 
+import com.example.com.hola.testapp.A_Workflow;
 import com.example.com.hola.testapp.ShareIntentActivity;
 import com.example.com.hola.testapp.SplashActivity;
 import com.example.com.hola.testapp.ToastActivity;
@@ -39,10 +40,11 @@ public class DummyContent {
     public static Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
 
     static {
-        addItem(new DummyItem("1", "Item 1"));
+        // addItem(new DummyItem("1", "Item 1"));
         addItem(new DummyItem("4", "Toast/Dialog Example", ToastActivity.class));
         addItem(new DummyItem("5", "Share Intent Example", ShareIntentActivity.class));
         addItem(new DummyItem("6", "SplashScreen Example", SplashActivity.class));
+        addItem(new DummyItem("7", "Activity Workflow Example", A_Workflow.class));
     }
 
     private static void addItem(DummyItem item) {
